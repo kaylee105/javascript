@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>console</title>
+    <script>
+
+        var p = ["사과","오렌지","수박","메론","바나나"]
+        console.log(p)
+        console.dir(p)
+
+        var name = "Tom";
+        var height = 165.9;
+        console.log('그의 이름은 %s 이며 키는 %f cm 입니다', name , height)
+
+        console.time("time");
+		alert("확인 버튼을 누르세요");
+		console.timeEnd("time");
+
+            setTimeout(function(){
+                console.log('2초후 실행')
+            },2000)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

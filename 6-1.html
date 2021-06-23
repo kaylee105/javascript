@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>대화상자 표시하기</title>
+    <script>
+        function alertTest(){
+            alert("안녕하세요!");
+        }
+        function promptTest() {
+            var name = prompt("이름을 입력하세요.");
+            //입력받은 값은 변수에 저장
+            alert("안녕하세요! " + name + "님");
+        }
+        function confirmTest() {
+            var del = confirm("정말 삭제하시겠습니까?");
+            //true 또는 false 를 반환한다.
+
+            if (del == true){
+                alert('삭제가 완료되었습니다.')
+            } else {
+                return;
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="alertTest()">경고 대화상자(alert)</button>
+    <button onclick="promptTest()">입력 대화상자(prompt)</button>
+    <button onclick="confirmTest()">확인 대화상자(prompt)</button>
+</body>
+
+</html>
